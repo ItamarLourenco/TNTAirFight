@@ -1,0 +1,2 @@
+1. Importar projetos do facebook e importar as bibliotecas corretas.
+2. Importar a biblioteca google-play-services_lib (em <sdk>/extras/)

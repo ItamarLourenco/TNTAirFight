@@ -1,0 +1,741 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_luta"
+     >
+
+    <LinearLayout
+        android:id="@+id/myLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/btn_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:visibility="invisible"
+                android:layout_marginTop="14dip"
+                android:src="@drawable/voltar" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_weight="1"
+                android:src="@drawable/header" />
+
+            <ImageView
+                android:id="@+id/configuracoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="invisible"
+                android:contentDescription="@string/opcoes"
+                android:src="@drawable/ico_opcoes" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/won"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dip"/>
+
+        <ImageView
+            android:id="@+id/estatisticas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dip"
+            android:gravity="center"
+            android:src="@drawable/img_estatistica" />
+
+        <LinearLayout
+            android:id="@+id/myLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_right"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+                
+                <LinearLayout
+	                android:layout_width="50dip"
+	                android:layout_height="50dip"
+	                android:background="@drawable/base_user_foto"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	                
+	 				<ProgressBar
+	                    android:id="@+id/progress_img_user"
+	                    style="?android:attr/progressBarStyleLarge"
+	                    android:layout_width="20dip"
+	                    android:visibility="invisible"
+	                    android:layout_height="20dip" />
+	
+	                <ImageView
+	                    android:id="@+id/img_user"
+	                    android:layout_width="48dip"
+	                    android:layout_height="48dip"
+	                    android:visibility="gone"
+	                    android:layout_marginBottom="2dip"                    
+	                    android:layout_marginRight="1dip" />
+	        	</LinearLayout>    
+            </LinearLayout>
+            
+                    <LinearLayout
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/pOne"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#FFF"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_armlock_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_armlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_arm_lock" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_chute_alto_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_chute_alta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_chute_alto" />
+
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/tableRowa4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_chute_frontal_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_chute_frontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_chute_frontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_cruzado_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_cruzado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_cruzado" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_guilhotinha_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_guilhotinha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_guilhotina" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_jab_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_jab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_jabs" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_joelhada_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_joelhada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_joelhada" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_mata_leao_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_mata_leao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_mata_leao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p1_gancho_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p1_gancho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_ganchos" />
+
+                    </LinearLayout>
+                
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                    
+                    <LinearLayout
+	                    android:layout_width="50dip"
+	                    android:layout_height="50dip"
+	                    android:background="@drawable/base_user_foto"
+	                    android:gravity="center"
+	                    android:orientation="vertical" >
+                
+	 				<ProgressBar
+	                    android:id="@+id/progress_img_user_adv"
+	                    style="?android:attr/progressBarStyleLarge"
+	                    android:layout_width="20dip"
+	                    android:visibility="invisible"
+	                    android:layout_height="20dip" />
+	
+	                <ImageView
+	                    android:id="@+id/img_user_adv"
+	                    android:layout_width="48dip"
+	                    android:layout_height="48dip"
+	                    android:visibility="gone"
+	                    android:layout_marginBottom="2dip"                    
+	                    android:layout_marginRight="1dip" />
+	            
+	                </LinearLayout>
+            </LinearLayout>
+                
+                
+
+                     <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/pTwo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#FFF"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa1320"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_armlock_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_armlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_arm_lock" />
+
+                    </LinearLayout>
+
+                   <LinearLayout
+                        android:id="@+id/tableRowa14230"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_chute_alto_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_chute_alta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_chute_alto" />
+
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/tableRowa153460"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_chute_frontal_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_chute_frontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_chute_frontal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa175750"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_cruzado_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_cruzado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_cruzado" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa10987978"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_guilhotinha_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_guilhotinha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_guilhotina" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tableRowa187680"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_jab_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_jab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_jabs" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_joelhada_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_joelhada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_joelhada" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_mata_leao_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_mata_leao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_mata_leao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip" >
+
+                        <TextView
+                            android:id="@+id/p2_gancho_valor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textColor="#FFF"
+                            android:textSize="25sp" />
+
+                        <ImageView
+                            android:id="@+id/p2_gancho"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="15dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/img_ganchos" />
+
+                    </LinearLayout>
+                
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="30dip"
+            android:layout_weight="1"
+            android:src="@drawable/hover_ok" />
+
+        <TextView
+            android:id="@+id/ver_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="VER RANKING"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+</ScrollView>

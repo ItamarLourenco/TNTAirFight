@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_ranking"
+	android:descendantFocusability="beforeDescendants" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:focusableInTouchMode="true"
+		android:descendantFocusability="beforeDescendants"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="35dip" >
+
+            <ImageView
+                android:id="@+id/btn_voltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:visibility="invisible"
+                android:layout_marginTop="14dip"
+                android:src="@drawable/voltar" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_weight="1"
+                android:src="@drawable/header" />
+
+            <ImageView
+                android:id="@+id/configuracoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:contentDescription="@string/opcoes"
+                android:visibility="invisible"
+                android:src="@drawable/ico_opcoes" />
+
+        </LinearLayout>
+
+	    <com.facebook.widget.LoginButton
+	        android:id="@+id/login_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dip"
+	        android:layout_marginRight="30dip"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/btn_facebook"
+	        android:visibility="gone"
+	        facebook:confirm_logout="false"
+	        facebook:fetch_user_info="true" />
+
+	    <Button
+	        android:id="@+id/btn_facebook"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:layout_marginLeft="34dip"
+	        android:layout_marginRight="34dip"
+	        android:layout_marginBottom="20dip"
+	        android:layout_marginTop="40dip"
+	        android:background="@drawable/btn_facebook" />
+
+	    <ImageView
+	        android:id="@+id/imageView20"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="12dip"
+	        android:layout_marginBottom="40dip"
+	        android:layout_marginTop="20dip"
+	        android:src="@drawable/ou" />
+	
+	       <EditText
+	           android:id="@+id/login"
+	           android:layout_width="match_parent"
+	           android:layout_height="60dip"
+	           android:layout_marginBottom="20dip"
+	           android:layout_marginLeft="34dip"
+	           android:layout_marginRight="34dip"
+	           android:layout_marginTop="10dip"
+	           android:background="@drawable/backtext"
+	           android:ems="10"
+	           android:paddingLeft="5dp"
+	           android:textColor="#FFF"
+	           android:textColorHint="#FFF" >
+	
+	       </EditText>
+	
+	       <EditText
+	           android:id="@+id/senha"
+	           android:layout_width="match_parent"
+	           android:layout_height="60dip"
+	           android:layout_marginLeft="34dip"
+	           android:layout_marginRight="34dip"
+	           android:layout_marginTop="12dip"
+	           android:background="@drawable/backtext"
+	           android:ems="10"
+	           android:inputType="textPassword"
+	           android:paddingLeft="5dp"
+	           android:textColor="#FFF"
+	           android:textColorHint="#FFF" >
+
+	        </EditText>
+	
+	       <Button
+	           android:id="@+id/btn_login"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_marginBottom="25dip"
+	           android:layout_marginLeft="34dip"
+	           android:layout_marginRight="34dip"
+	           android:layout_marginTop="40dip"
+	           android:background="@drawable/hover_login"
+	           android:contentDescription="@string/login" />
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content" >
+
+	           <ImageView
+	               android:id="@+id/criar_conta"
+	               android:contentDescription="@string/criar_conta"
+	               android:layout_width="match_parent"
+	               android:layout_height="wrap_content"
+	               android:src="@drawable/nao_tem_conta_criar_conta" />
+
+	       </LinearLayout>
+
+	       <ImageView
+	           android:id="@+id/esqueci_senha"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_marginTop="5dip"
+	           android:contentDescription="@string/esqueci_senha"
+	           android:src="@drawable/esqueci_senha" />
+
+	       <LinearLayout
+	           android:layout_width="match_parent"
+	           android:layout_height="300dip"
+	           android:orientation="vertical" >
+	       </LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string translatable="false" name="app_name">TNTAirFight</string>
+    <string name="title_activity_splash">TNTAirFight</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_adversarios">Adversarios</string>
+    <string name="opcoes">Opções</string>
+    <string name="nome">NOME</string>
+    <string name="lutas">LUTAS</string>
+    <string name="pontos">200</string>
+    <string name="vitorias">VITÓRIAS</string>
+    <string name="empates">EMPATES</string>
+    <string name="derrotas">DERROTAS</string>
+    <string name="valores">149</string>
+    <string name="procurar_adversario">Procurar Adversários</string>
+    <string name="ver_ranking">VER RANKING</string>
+    <string name="title_activity_ranking_geral">RankingGeral</string>
+    <string name="voltar">Voltar</string>
+    <string name="ranking_geral">Ranking Geral</string>
+    <string name="title_activity_adversarios_proximos">AdversariosProximos</string>
+    <string name="title_activity_splash_video">SplashVideo</string>
+    <string name="title_activity_login">LOGIN</string>
+    <string name="facebook">Facebook</string>
+    <string name="criar_conta">NÃO TEM CONTA?</string>
+    <string name="criar_conta_negrito">CRIAR CONTA.</string>
+    <string name="data">DATA DE NASCIMENTO</string>
+    <string name="email">E-MAIL</string>
+    <string name="senha">SENHA</string>
+    <string name="login">LOGIN</string>
+    <string name="title_activity_cadastro">CADSTRO</string>
+    <string name="como_jogar">COMO JOGAR</string>
+    <string name="configuracao">CONFIGURAÇÃO</string>
+    <string name="esqueci_senha">ESQUECI A SENHA.</string>
+    <string name="confirma_senha">CONFIRMAR SENHA</string>
+    <string name="id_developer_ponto_mobi">jxNFtBYNsuJAYscTBhpyta</string>
+    <string name="text_img">TOQUE PARA EDITAR</string>
+
+    <!-- URLs WS -->
+    <string name="url_match">http://54.232.123.16/api/match/</string>
+    <string name="url_login">http://54.232.123.16/api/login/</string>
+    <string name="url_cadastro">http://54.232.123.16/api/register</string>
+    <string name="url_status">http://54.232.123.16/api/userstats/</string>
+    <string name="url_rank">http://54.232.123.16/api/rank/</string>
+    <string name="url_signal">http://54.232.123.16/</string>
+    <string name="url_hit">http://54.232.123.16/api/hit/</string>
+    <string name="url_macth">http://54.232.123.16/api/matchresult/</string>
+    <string name="url_users">http://54.232.123.16/api/userstats/</string>
+    <string name="upload_photo">http://54.232.123.16/api/picprofile/</string>
+    <string name="url_upload_photo">http://54.232.123.16/Content/images/%s-%s.jpg</string>
+    <string name="url_buscas">http://54.232.123.16/api/randomuser/</string>
+    <!-- URLs WS -->
+
+    <string name="title_activity_configuracao">Configuracao</string>
+    <string name="title_activity_procurar_adversarios">ProcurarAdversarios</string>
+    <string name="title_activity_show_ranking">ShowRanking</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_espera">Espera</string> 
+    <string name="title_activity_como_joga">ComoJoga</string>
+    <string name="sons">Sons</string>
+    <string name="vibracao">Vibração</string>
+    <string name="notificacao">Notificação</string>
+    <string name="canhoto_destro">Canhoto Destro</string>
+    <string name="digite_senha">DIGITE SUA SENHA CORRETAMENTE</string>
+    <string name="termodeuso">VER TERMOS DE USO</string>
+    <string name="sair">SAIR</string>
+    <string name="senha_confirme">CONFIRMAR SENHA</string>
+    <string name="title_activity_termo_de_uso">TermoDeUso</string>
+    <string name="title_activity_termo_de_usu">TermoDeUsu</string>
+    <string name="title_activity_esqueci_senha">EsqueciSenha</string>
+    <string name="recuperar_senha">DIGITE SEU E-MAIL ABAIXO PARA RECEBER SEU USUÁRIO E SENHA</string>
+    <string name="title_activity_preparados">Preparados</string>
+    <string name="title_activity_luta">Luta</string>
+    <string name="title_activity_estatisticas">Estatisticas</string>
+    <string name ="enter_email">Por favor, entre com seu e-mail.</string>
+    <string name="app_id">789623567728095</string>
+    <string name="como_jogar_perfil">COMO JOGAR</string>
+    
+    <string name="termo_completo">
+“O presente aplicativo foi desenvolvido para promoção e divulgação da marca TNT Energy Drink, de propriedade da Cervejaria Petrópolis S/A, com a preservação de todos os direitos autorais.
+O download deste aplicativo pelo usuário importa a aceitação dos termos de uso.
+\n\n
+1.       O aplicativo Air Fight é destinado a maiores de 16 anos.
+\n\n
+2.       A finalidade deste aplicativo é tão somente o entretenimento dos usuários, não importando em qualquer modalidade de concurso ou sorteio e não há distribuição de qualquer espécie de premiação.
+\n\n
+3.       Os usuários são exclusivamente responsáveis por quaisquer danos que eventualmente venham a causar aos seus aparelhos ou a terceiros durante a utilização deste aplicativo.
+\n\n
+4.       A critério dos idealizadores, este aplicativo e seus Termos de Uso poderão ser removidos ou alterados a qualquer tempo, sem prévio aviso.”
+\n\n
+O TNT Energy Drink se reserva o direito de alterar os presentes Termos de Uso a qualquer momento, a seu exclusivo critério.
+\n\n\n\n
+    </string>
+
+</resources>

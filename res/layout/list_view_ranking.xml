@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/base_user_foto" >
+
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="47dip"
+                android:layout_height="47dip"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="1dip"
+                android:layout_marginTop="1dip"                    
+                android:layout_marginRight="1dip" />
+        
+		</LinearLayout>
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1"
+            android:maxLength="22"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="0dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="20dip"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/pts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:text="PTS"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="#FFF"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

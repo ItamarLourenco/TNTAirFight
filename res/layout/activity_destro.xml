@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="br.com.androiddev.tntairfight.app.DestroFight">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imgvFundo"
+        android:src="@drawable/bg"
+        android:layout_below="@+id/lblGolpe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imgVControle"
+        android:src="@drawable/botoes_destro"
+        android:layout_below="@+id/lblGolpe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+    android:layout_width="390px"
+    android:layout_height="170dp"
+        android:background="@android:color/transparent"
+
+    android:id="@+id/btnC"
+        android:layout_alignTop="@+id/imgvFundo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="390px"
+        android:layout_height="170dp"
+        android:background="@android:color/transparent"
+
+        android:id="@+id/btnB"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/btnC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="390px"
+        android:layout_height="183dp"
+        android:background="@android:color/transparent"
+
+        android:id="@+id/btnA"
+        android:layout_below="@+id/btnB"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/lblGolpe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:background="@android:color/transparent"
+        android:layout_height="fill_parent"
+
+        android:layout_marginRight="22dp"
+        android:id="@+id/btnDefesa"
+        android:layout_alignRight="@+id/lblGolpe"
+        android:layout_alignEnd="@+id/lblGolpe"
+        android:layout_alignParentTop="true" />
+
+
+
+
+</RelativeLayout>

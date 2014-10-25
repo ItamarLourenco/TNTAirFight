@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="br.com.bizsys.tntairflight"
+    android:versionCode="12"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/app_id" />
+    
+    <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+
+    <application
+        android:icon="@drawable/icone"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo"
+        tools:ignore="NewApi" android:allowBackup="true">
+		
+        
+		<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+			<intent-filter>
+				<action android:name="com.android.vending.INSTALL_REFERRER" />
+			</intent-filter>
+		</receiver>
+        
+        
+        <activity
+            android:name="br.com.bizsys.tntairfight.Splash"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Cadastro"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Adversarios"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Configuracao"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.RankingGeral"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.ParentViewPagerFragment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.StartFight"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Procurar"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Espera"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.ComoJogar"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.TermoDeUso"
+            android:label="@string/title_activity_termo_de_uso"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.EsqueciSenha"
+            android:label="@string/title_activity_esqueci_senha"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Preparados"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_preparados" >
+            
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Luta"
+            android:label="@string/title_activity_luta"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.Estatisticas"
+            android:label="@string/title_activity_estatisticas"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.LoginFacebook"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.RankingShow"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="br.com.bizsys.tntairfight.Perfil"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="br.com.bizsys.tntairfight.ComoLutarFight"
+            android:screenOrientation="portrait" >
+        </activity>
+    
+    
+		
+
+		
+	</application>
+	
+</manifest>

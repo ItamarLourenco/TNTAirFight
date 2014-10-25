@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_espera"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="35dip"
+            android:background="@drawable/base_user_foto"
+            android:gravity="center"
+            android:orientation="vertical" >
+                
+ 				<ProgressBar
+                    android:id="@+id/progress_img_user"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:visibility="invisible"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip" />
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:visibility="gone"
+                    android:layout_marginBottom="2dip"                    
+                    android:layout_marginRight="1dip" />
+	            
+            </LinearLayout>
+        
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/cidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:drawableLeft="@drawable/ico_localizacao"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+        
+         <TextView
+             android:id="@+id/idade"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:textAppearance="?android:attr/textAppearanceSmall"
+             android:textColor="#FFF"
+             android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+         
+        <LinearLayout
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="130dip"
+            android:background="@drawable/base_user_foto"
+            android:gravity="center"
+            android:orientation="vertical" >
+                
+ 				<ProgressBar
+                    android:id="@+id/progress_img_user_adv"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:visibility="invisible"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip" />
+
+                <ImageView
+                    android:id="@+id/img_user_adv"
+                    android:layout_width="48dip"
+                    android:layout_height="48dip"
+                    android:visibility="gone"
+                    android:layout_marginBottom="2dip"                    
+                    android:layout_marginRight="1dip" />
+	            
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/adv_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/adv_cidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:drawableLeft="@drawable/ico_localizacao"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+        
+         <TextView
+            android:id="@+id/adv_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+</LinearLayout>
